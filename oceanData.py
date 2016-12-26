@@ -1,6 +1,3 @@
-
-
-
 import pandas as pd
 import datetime
 import numpy as np
@@ -117,3 +114,8 @@ class oceanDataPlot():
         fig.canvas.draw()
         fig.savefig('new.png')
 
+if __name__=='__main__':
+    od1=oceanDataPlot()
+    od1.intersectDates()
+    od1.plotDates()
+    od1.fig.show()
