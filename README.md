@@ -1,5 +1,5 @@
 # Pandas-Ocean-Dat
-Pandas library to illustrate the effectiveness of Pandas on time series oceanographic data
+Pandas library to illustrate the effectiveness of Pandas on time series oceanographic data.  This module will import oceanographic data such as wind and wave data, store the data into a pandas dataframe, and perform extremal analysis and plot the output using Pandas capability with matplotlib.
 
 
 ```python
