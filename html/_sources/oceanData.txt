@@ -1,0 +1,23 @@
+================================
+OceanData Module
+================================
+
+module
+===============
+..  automodule:: oceanData
+    :members:
+
+Using the Code
+=============== 
+See the `oceanData.ipynb <../../oceanData.ipynb>`_ in ipython notebooks for a more illustrated example of the module. Roseplots were adapted from the :ref:`rosePlot` module. 
+
+.. code:: python
+
+    import oceanData.oceanDataPlot
+    odp1=oceanDataPlot()
+    odp1.intersectDates()
+    odp1.plotDates()
+    odp1.fig.show()
+
+    odp1.createWaveRose()
+    odp1.createWindRose()

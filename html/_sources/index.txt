@@ -1,0 +1,49 @@
+.. oceanData documentation master file, created by
+   sphinx-quickstart on Tue Jan  3 20:59:56 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to oceanData's documentation!
+=====================================
+
+The :ref:`oceanData` module analyzes instrumentation data from NCDC
+data sources to create timeseries and statistical plots of wind and wave data.  This analysis uses the Pandas library within Python to apply timeseries analysis, isolate extreme observations, and produce statistical summaries of the data.  graphical results include time series of data and rose plots of wind and wave directions as follows:
+
+
+.. figure:: ../timeseries.png
+   :scale: 50%
+   :alt:   None
+
+   Time series plot of wind and wave data
+	    
+.. figure:: ../WaveRose.png
+   :scale: 25%
+   :alt:   None
+
+   Rose plot of wave data
+
+.. figure:: ../WindRose.png
+   :scale: 25%
+   :alt:   None
+
+   Rose plot of wind data
+   
+
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+   oceanData
+   rosePlot
+   cheatsheet
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

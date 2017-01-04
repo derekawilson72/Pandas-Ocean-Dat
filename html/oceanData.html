@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>OceanData Module &mdash; oceanData 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-3.3.6/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="oceanData 1.0 documentation" href="index.html" />
+    <link rel="next" title="Rose Plot" href="rosePlot.html" />
+    <link rel="prev" title="Welcome to oceanData’s documentation!" href="index.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          oceanData</a>
+        <span class="navbar-text navbar-version pull-left"><b>1.0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">OceanData Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rosePlot.html">Rose Plot</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cheatsheet.html">Sphinx cheat sheet</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">OceanData Module</a><ul>
+<li><a class="reference internal" href="#module-oceanData">module</a></li>
+<li><a class="reference internal" href="#using-the-code">Using the Code</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Welcome to oceanData’s documentation!"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Welcome to ocean...</span>
+    </a>
+  </li>
+  <li>
+    <a href="rosePlot.html" title="Next Chapter: Rose Plot"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Rose Plot &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="_sources/oceanData.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="oceandata-module">
+<h1>OceanData Module<a class="headerlink" href="#oceandata-module" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-oceanData">
+<span id="module"></span><h2>module<a class="headerlink" href="#module-oceanData" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="oceanData.oceanDataPlot">
+<em class="property">class </em><code class="descclassname">oceanData.</code><code class="descname">oceanDataPlot</code><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>merge two datasets with intersecting (overlapping) date ranges.
+Plot the data as a single dataset and export as a netcdf.</p>
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.createWaveRose">
+<code class="descname">createWaveRose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.createWaveRose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.createWaveRose" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a rose plot with the WaveData parameter in both magnitude and direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.createWindRose">
+<code class="descname">createWindRose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.createWindRose"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.createWindRose" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a rose plot with the WindData parameter in both magnitude and direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.intersectDates">
+<code class="descname">intersectDates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.intersectDates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.intersectDates" title="Permalink to this definition">¶</a></dt>
+<dd><p>determine common date range between two datasets</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.plotDates">
+<code class="descname">plotDates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.plotDates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.plotDates" title="Permalink to this definition">¶</a></dt>
+<dd><p>plotting datasets of wind and wave data as well as the extreme
+events.  Uses Pandas inherent time series plotting tools.</p>
+<p>None. Uses class variables</p>
+<p>out : fig
+A matplotlib figure object of the timeseries plot</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="bp">self</span><span class="o">.</span><span class="n">plotDates</span><span class="p">()</span>
+<span class="go">matplotlib fig</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.rosePlot">
+<code class="descname">rosePlot</code><span class="sig-paren">(</span><em>magn</em>, <em>dirs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.rosePlot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.rosePlot" title="Permalink to this definition">¶</a></dt>
+<dd><p>generate a rose plot with the class values for WaveData or Winddata. A rose plot will display the magnitude and direction of both wind and waves.  The rose plots will appear as wedges in the direction of the wave or wind.  The magnitude of the wave or wind will appear as the diameter of the wedge and a cumulative distribution function will appear as color codes of the wedge.</p>
+<p>magn:  array-like 
+magnitude of wind or waves
+dirs:  array-like
+direction of wind or waves</p>
+<p>out : fig
+A matplotlib figure object of the roseplot</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="bp">self</span><span class="o">.</span><span class="n">rosePlot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">WaveData</span><span class="o">.</span><span class="n">Wvht</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">WaveData</span><span class="o">.</span><span class="n">Wvdr</span><span class="p">)</span>
+<span class="go">matplotlib fig</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="bp">self</span><span class="o">.</span><span class="n">rosePlot</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">WindData</span><span class="o">.</span><span class="n">Wnsp</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">WaveData</span><span class="o">.</span><span class="n">Wndr</span><span class="p">)</span>
+<span class="go">matplotlib fig</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="bp">self</span><span class="o">.</span><span class="n">rosePlot</span><span class="p">()</span>  <span class="c">##return random dataset for testing</span>
+<span class="go">matplotlib fig</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="oceanData.oceanDataPlot.setSampleData">
+<code class="descname">setSampleData</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/oceanData.html#oceanDataPlot.setSampleData"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#oceanData.oceanDataPlot.setSampleData" title="Permalink to this definition">¶</a></dt>
+<dd><p>set two arbitrary date ranges with overlapping dates</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="using-the-code">
+<h2>Using the Code<a class="headerlink" href="#using-the-code" title="Permalink to this headline">¶</a></h2>
+<p>See the <a class="reference external" href="../../oceanData.ipynb">oceanData.ipynb</a> in ipython notebooks for a more illustrated example of the module. Roseplots were adapted from the <a class="reference internal" href="rosePlot.html#roseplot"><span>Rose Plot</span></a> module.</p>
+<div class="code python highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">oceanData.oceanDataPlot</span>
+<span class="n">odp1</span><span class="o">=</span><span class="n">oceanDataPlot</span><span class="p">()</span>
+<span class="n">odp1</span><span class="o">.</span><span class="n">intersectDates</span><span class="p">()</span>
+<span class="n">odp1</span><span class="o">.</span><span class="n">plotDates</span><span class="p">()</span>
+<span class="n">odp1</span><span class="o">.</span><span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">odp1</span><span class="o">.</span><span class="n">createWaveRose</span><span class="p">()</span>
+<span class="n">odp1</span><span class="o">.</span><span class="n">createWindRose</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2017, DW.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
