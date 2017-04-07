@@ -214,8 +214,12 @@ class oceanDataPlot():
             wvs0=magn[idxs].values
             #wvs0=np.random.rand(100)*np.random.randint(1,100)
             wvs0.sort()
-            inds=np.linspace(0,1.0, len(wvs0))
-            wv_bdys=np.interp(bins, inds, wvs0, left=None, right=None)
+            
+            if len(wvs0)>0:
+                inds=np.linspace(0,1.0, len(wvs0))
+                wv_bdys=np.interp(bins, inds, wvs0, left=None, right=None)
+            else:
+                wv_bdys=np.zeros(len(bins))
             bars_0=ax.bar(theta_i*np.ones(len(bins)), wv_bdys,
                           width=width, color=colors, bottom=0.0)
             bars.append(bars_0)
@@ -233,4 +237,14 @@ if __name__=='__main__':
     odp1.createWaveRose()
     odp1.createWindRose()
 
+    wd1=pd.read_csv('data/windate.csv')
+
+
+    wd1=wd1.set_index('date')
+    wd1['Wndr']=wd1['WD']
+    wd1['Wspd']=wd1['WSPD']
+    odp1.WindData =   wd1[['Wndr','Wspd']]
+
+    odp1.createWindRose()
+    odp1.rosePlotFig.show()
 
